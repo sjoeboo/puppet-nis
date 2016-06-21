@@ -4,7 +4,11 @@ class nis (
   Boolean $broadcast  = $nis::params::broadcast,
   Array $servers      = $nis::params::servers,
   ) inherits nis::params {
-    include ::nis::install
-    include ::nis::config
-    include ::nis::service
+    class { '::nis::install': }
+    class { '::nis::config':
+      require => Class['::nis::install'],
+    }
+    class { '::nis::service':
+      subscribe => Class[':nis::config'],
+    }
   }
