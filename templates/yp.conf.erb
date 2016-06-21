@@ -1,6 +1,6 @@
 <% if @broadcast -%>
 domain <%= @domain %> broadcast
-<$ else -%>
+<% else -%>
 <% @servers.each do |s| -%>
 domain <%= @domain %> server <%= s %>
 <% end -%>
