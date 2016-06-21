@@ -2,6 +2,6 @@ class nis::service {
   service { 'ypbind':
     ensure    => running,
     enable    => true,
-    subscribe => File['/etc/yp.conf '],
+    subscribe => File['/etc/yp.conf'],
   }
 }
