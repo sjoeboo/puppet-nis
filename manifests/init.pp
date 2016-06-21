@@ -9,6 +9,6 @@ class nis (
       require => Class['::nis::install'],
     }
     class { '::nis::service':
-      subscribe => Class[':nis::config'],
+      subscribe => Class['::nis::config'],
     }
   }
