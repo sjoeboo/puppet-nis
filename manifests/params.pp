@@ -1,7 +1,7 @@
 class nis::params {
   case $::osfamily {
     'RedHat': {
-      $package                 = 'ypbind'
+      $package = 'ypbind'
     }
     default: {
       fail("${::operatingsystem} not supported")
