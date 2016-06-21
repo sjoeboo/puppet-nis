@@ -10,6 +10,6 @@ class nis::config (
       group   => 'root',
       mode    => '0644',
       content => template('nis/yp.conf.erb'),
-      require => package[$package],
+      require => Package[$package],
     }
   }
