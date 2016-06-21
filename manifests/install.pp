@@ -1,5 +1,5 @@
 class nis::install (
-  $package = $nis::pacakge,
+  $package = $nis::package,
   ) {
 
     package {$package:
