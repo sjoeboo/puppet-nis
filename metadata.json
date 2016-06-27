@@ -2,7 +2,7 @@
   "name": "sjoeboo-nis",
   "version": "0.1.0",
   "author": "sjoeboo",
-  "summary": null,
+  "summary": "Very basic NIS client module",
   "license": "Apache-2.0",
   "source": "https://github.com/sjoeboo/puppet-nis",
   "project_page": "https://github.com/sjoeboo/puppet-nis",
@@ -12,4 +12,3 @@
   ],
   "data_provider": null
 }
-
